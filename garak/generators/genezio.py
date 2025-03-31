@@ -10,7 +10,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
 
 from adapters.adapter import register_adapters
-from adapters.adaptor_types import AdapterType
+from adapters.adapter_types import AdapterType
 from adapters.adapter_factory import AdapterFactory
 
 class GenezioAgent(Generator):
