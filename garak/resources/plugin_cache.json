@@ -5286,14 +5286,23 @@
     }
   },
   "generators": {
-    "generators.genezio.MockChatGPTGenerator": {
-      "description": "Genezio custom mock ChatGPT generator",
+    "generators.genezio.MockAgent": {
+      "description": "Genezio custom mock generator",
       "active": true,
       "modality": {
         "in": ["text"],
         "out": ["text"]
       },
-      "mod_time": "2024-11-22 20:20:29 +0000"
+      "mod_time": "2025-03-31 17:11:29 +0000"
+    },
+    "generators.genezio.GenezioAgent": {
+      "description": "Genezio agent generator",
+      "active": true,
+      "modality": {
+        "in": ["text"],
+        "out": ["text"]
+      },
+      "mod_time": "2025-03-31 17:11:29 +0000"
     },
     "generators.azure.AzureOpenAIGenerator": {
       "description": "Wrapper for Azure Open AI. Expects AZURE_API_KEY, AZURE_ENDPOINT and AZURE_MODEL_NAME environment variables.",

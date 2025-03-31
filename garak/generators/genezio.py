@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from typing import List, Union
 from garak import _config
 from garak.generators.base import Generator
@@ -8,16 +9,19 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
 
-from adapters.http.mock_dev import MockClient
+from adapters.adapter import register_adapters
+from adapters.adaptor_types import AdapterType
+from adapters.adapter_factory import AdapterFactory
 
-class MockChatGPTGenerator(Generator):
+class GenezioAgent(Generator):
     """
-    Custom Generator for interacting with MockClient, a custom ChatGPT agent.
+    Generator for interacting with any genezio agent
     """
 
-    generator_family_name = "mock"
+    generator_family_name = "genezio"
 
     COMPANY_NAME_ENV_VAR = "GENEZIO_COMPANY_NAME"
+    ADAPTER_TYPE_ENV_VAR = "GENEZIO_ADAPTER_TYPE"
     KB_TOKEN_ENV_VAR = "GENEZIO_KB_API_KEY"
     KB_ENV_VAR = "GENEZIO_KB_ENDPOINT"
     KB_IDS_ENV_VAR = "GENEZIO_KB_IDS"
@@ -32,6 +36,13 @@ class MockChatGPTGenerator(Generator):
         self.company_name = os.getenv(self.COMPANY_NAME_ENV_VAR, "").strip()
         if not self.company_name:
             raise ValueError(f"The {self.COMPANY_NAME_ENV_VAR} environment variable is required.")
+
+        # Ensure optional adapter type is a string, defaulting to HTTP if it is not present.
+        adapter_type_str = os.getenv(self.ADAPTER_TYPE_ENV_VAR, "").strip()
+        try:
+            self.adapter_type = AdapterType(adapter_type_str)
+        except ValueError:
+            self.adapter_type = AdapterType.HTTP
 
         # Ensure API token is a string
         self.token = os.getenv(self.KB_TOKEN_ENV_VAR, "").strip()
@@ -56,26 +67,43 @@ class MockChatGPTGenerator(Generator):
 
     async def __setup(self):
         if self.client == None:
-            self.client = MockClient(self.company_name, self.token, self.knowledge_base_ids, self.knowledge_base_url)
+            await register_adapters()
+
+            self.client = AdapterFactory.create_adapter(self.company_name, self.adapter_type, self.token, self.knowledge_base_ids, self.knowledge_base_url)
             await self.client.setup()
 
-    def _call_model(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
-        """
-        Sends the prompt to MockClient and returns the response.
-        """
-        import asyncio  # Required for async calls
-
-        async def get_response() -> List[Union[str, None]]:
+    async def _call_model_async(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
             await self.__setup()
             if self.client is None:
                 raise RuntimeError("MockClient is not initialized.")
             response = await self.client.send(message=prompt)
-            return [r if r is not None else None for r in response] if isinstance(response, list) else [response]
+            return response if isinstance(response, list) else [response]
 
+    def _call_model(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
         try:
-            return asyncio.run(get_response())
-        except Exception as e:
+            return asyncio.run(self._call_model_async(prompt, generations_this_call))
+        except RuntimeError as e:
             logging.error(f"Error during MockClient call: {e}")
             return [None]
 
-DEFAULT_CLASS = "MockChatGPTGenerator"
+class MockAgent(GenezioAgent):
+    """
+    Custom Generator for interacting with MockClient, a custom ChatGPT agent.
+    """
+
+    def __init__(self, name="", config_root=_config):
+        super().__init__(name, config_root)
+        self.company_name = 'mock-dev-' + self.company_name
+
+    async def __setup(self):
+        await super().__setup()
+
+    def _call_model(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
+        try:
+            return asyncio.run(self._call_model_async(prompt, generations_this_call))
+        except RuntimeError as e:
+            logging.error(f"Error during MockClient call: {e}")
+            return [None]
+
+
+DEFAULT_CLASS = "MockAgent"
