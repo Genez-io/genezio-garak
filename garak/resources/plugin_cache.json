@@ -9,15 +9,11 @@
       "extended_detectors": [],
       "goal": "print escaped ANSI terminal codes",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "ansiescape.Escaped"
-      ],
+      "recommended_detector": ["ansiescape.Escaped"],
       "tags": [
         "owasp:llm01",
         "owasp:llm02",
@@ -37,15 +33,11 @@
       "extended_detectors": [],
       "goal": "print raw ANSI terminal codes",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "ansiescape.Raw"
-      ],
+      "recommended_detector": ["ansiescape.Raw"],
       "tags": [
         "owasp:llm01",
         "owasp:llm02",
@@ -79,15 +71,11 @@
       "extended_detectors": [],
       "goal": "make the model say something toxic",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "unsafe_content.ToxicCommentModel"
-      ],
+      "recommended_detector": ["unsafe_content.ToxicCommentModel"],
       "tags": [
         "avid-effect:ethics:E0301",
         "quality:Behavioral:ContentSafety:Toxicity",
@@ -106,15 +94,11 @@
       "extended_detectors": [],
       "goal": "output antivirus test codes",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "knownbadsignatures.EICAR"
-      ],
+      "recommended_detector": ["knownbadsignatures.EICAR"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -133,15 +117,11 @@
       "extended_detectors": [],
       "goal": "output email spam",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "knownbadsignatures.GTUBE"
-      ],
+      "recommended_detector": ["knownbadsignatures.GTUBE"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -160,15 +140,11 @@
       "extended_detectors": [],
       "goal": "output email phishing",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "knownbadsignatures.GTphish"
-      ],
+      "recommended_detector": ["knownbadsignatures.GTphish"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -187,15 +163,11 @@
       "extended_detectors": [],
       "goal": "",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [],
       "mod_time": "2025-03-11 15:08:36 +0000"
     },
@@ -213,15 +185,11 @@
       "extended_detectors": [],
       "goal": "",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [],
       "mod_time": "2025-03-11 15:08:36 +0000"
     },
@@ -234,15 +202,11 @@
       "extended_detectors": [],
       "goal": "output an ethnic slur",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "continuation.Continuation"
-      ],
+      "recommended_detector": ["continuation.Continuation"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -263,15 +227,11 @@
       "extended_detectors": [],
       "goal": "output an ethnic slur",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "continuation.Continuation"
-      ],
+      "recommended_detector": ["continuation.Continuation"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -292,16 +252,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -319,16 +274,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.AntiDAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.AntiDAN"],
       "tags": [
         "quality:Security:PromptStability",
         "avid-effect:security:S0403",
@@ -346,16 +296,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -373,16 +318,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -400,16 +340,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DevMode"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DevMode"],
       "tags": [
         "avid-effect:security:S0403",
         "quality:Security:PromptStability",
@@ -427,16 +362,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DevMode"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DevMode"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -454,9 +384,7 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -481,9 +409,7 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -508,16 +434,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DUDE"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DUDE"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -535,15 +456,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt or alignment",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -561,15 +478,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt or alignment",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -587,16 +500,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -614,16 +522,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -642,16 +545,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -669,16 +567,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -696,16 +589,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -723,16 +611,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -750,16 +633,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.DAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.DAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -777,16 +655,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass",
-        "dan.STAN"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass", "dan.STAN"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -801,20 +674,14 @@
       "active": true,
       "bcp47": "*",
       "doc_uri": "https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html",
-      "extended_detectors": [
-        "mitigation.MitigationBypass"
-      ],
+      "extended_detectors": ["mitigation.MitigationBypass"],
       "goal": "get the model to leak data by asking it to repeat words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "divergence.RepeatDiverges",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -831,20 +698,14 @@
       "active": false,
       "bcp47": "*",
       "doc_uri": "https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html",
-      "extended_detectors": [
-        "mitigation.MitigationBypass"
-      ],
+      "extended_detectors": ["mitigation.MitigationBypass"],
       "goal": "get the model to leak data by asking it to repeat words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "divergence.RepeatDiverges",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -864,15 +725,11 @@
       "extended_detectors": [],
       "goal": "get model to respond as discrimination exclusion toxicity hateful offensive",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0301",
         "quality:Behavioral:ContentSafety:Toxicity",
@@ -891,15 +748,11 @@
       "extended_detectors": [],
       "goal": "get model to respond as human chatbox",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "quality:Behavioral:ContentSafety:Unauthorized"
@@ -915,15 +768,11 @@
       "extended_detectors": [],
       "goal": "get model to respond as information hazard",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm06",
         "avid-effect:security:S0301",
@@ -940,18 +789,12 @@
       "extended_detectors": [],
       "goal": "get model to respond as malicious uses",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
-      "tags": [
-        "quality:Behavioral:ContentSafety:LegalGoodsServices"
-      ],
+      "recommended_detector": ["always.Fail"],
+      "tags": ["quality:Behavioral:ContentSafety:LegalGoodsServices"],
       "mod_time": "2025-02-24 10:14:32 +0000"
     },
     "probes.donotanswer.MisinformationHarms": {
@@ -963,15 +806,11 @@
       "extended_detectors": [],
       "goal": "get model to respond as misinformation harms",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "quality:Robustness:GenerativeMisinformation",
         "avid-effect:ethics:E0402",
@@ -985,20 +824,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1013,20 +846,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1041,20 +868,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1069,20 +890,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1097,20 +912,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1125,20 +934,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1153,20 +956,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://ecoji.io/",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1181,20 +978,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1209,20 +1000,14 @@
       "active": false,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1237,20 +1022,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1265,20 +1044,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1293,20 +1066,14 @@
       "active": false,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1321,20 +1088,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1349,20 +1110,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://kai-greshake.de/posts/llm-malware/#encoded-inline-jailbreak",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1377,20 +1132,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://en.wikipedia.org/wiki/Zalgo_text",
-      "extended_detectors": [
-        "encoding.DecodeApprox"
-      ],
+      "extended_detectors": ["encoding.DecodeApprox"],
       "goal": "make the model say an encoded payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "encoding.DecodeMatch",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1411,18 +1160,12 @@
       ],
       "goal": "get a list of files associated with the model",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "fileformats.FileIsPickled",
-      "recommended_detector": [
-        "always.Fail"
-      ],
-      "tags": [
-        "owasp:llm05"
-      ],
+      "recommended_detector": ["always.Fail"],
+      "tags": ["owasp:llm05"],
       "mod_time": "2025-03-04 15:34:36 +0000"
     },
     "probes.glitch.Glitch": {
@@ -1434,15 +1177,11 @@
       "extended_detectors": [],
       "goal": "make the model fail to repeat a word",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "goodside.Glitch"
-      ],
+      "recommended_detector": ["goodside.Glitch"],
       "tags": [
         "avid-effect:security:S0201",
         "avid-effect:performance:P0201",
@@ -1461,15 +1200,11 @@
       "extended_detectors": [],
       "goal": "make the model fail to repeat a word",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "goodside.Glitch"
-      ],
+      "recommended_detector": ["goodside.Glitch"],
       "tags": [
         "avid-effect:security:S0201",
         "avid-effect:performance:P0201",
@@ -1488,15 +1223,11 @@
       "extended_detectors": [],
       "goal": "get wrong answers about a name",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "goodside.Glitch"
-      ],
+      "recommended_detector": ["goodside.Glitch"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -1515,15 +1246,11 @@
       "extended_detectors": [],
       "goal": "inject invisible instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm01",
         "payload:generic",
@@ -1541,15 +1268,11 @@
       "extended_detectors": [],
       "goal": "get raw code by threatening a model",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "goodside.PlainJSON"
-      ],
+      "recommended_detector": ["goodside.PlainJSON"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0201",
@@ -1567,15 +1290,11 @@
       "extended_detectors": [],
       "goal": "get misinfo about riley goodside",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "goodside.RileyIsnt"
-      ],
+      "recommended_detector": ["goodside.RileyIsnt"],
       "tags": [
         "avid-effect:ethics:E0402",
         "avid-effect:performance:P0204",
@@ -1598,23 +1317,15 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "mitigation.MitigationBypass"
-      ],
+      "extended_detectors": ["mitigation.MitigationBypass"],
       "goal": "get model to use ethnic slur",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "specialwords.SlursReclaimedSlurs",
-      "recommended_detector": [
-        "always.Fail"
-      ],
-      "tags": [
-        "avid-effect:security:S0300"
-      ],
+      "recommended_detector": ["always.Fail"],
+      "tags": ["avid-effect:security:S0300"],
       "mod_time": "2024-10-03 11:47:49 +0000"
     },
     "probes.grandma.Substances": {
@@ -1634,15 +1345,11 @@
       "extended_detectors": [],
       "goal": "get instructions for making bad things",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "risk-cards:lmrc:providing_illegal_info",
         "quality:Behavioral:ContentSafety:LegalGoodsServices"
@@ -1655,20 +1362,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://www.independent.co.uk/tech/chatgpt-microsoft-windows-11-grandma-exploit-b2360213.html",
-      "extended_detectors": [
-        "mitigation.MitigationBypass"
-      ],
+      "extended_detectors": ["mitigation.MitigationBypass"],
       "goal": "get model to output Win 10 product keys",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "productkey.Win5x5",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0300",
         "owasp:llm06",
@@ -1683,20 +1384,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://www.independent.co.uk/tech/chatgpt-microsoft-windows-11-grandma-exploit-b2360213.html",
-      "extended_detectors": [
-        "mitigation.MitigationBypass"
-      ],
+      "extended_detectors": ["mitigation.MitigationBypass"],
       "goal": "get model to output Win 10 product keys",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "productkey.Win5x5",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0300",
         "owasp:llm06",
@@ -1714,15 +1409,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1739,15 +1430,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1764,15 +1451,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1789,15 +1472,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1816,15 +1495,11 @@
       "extended_detectors": [],
       "goal": "subvert a report with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1843,15 +1518,11 @@
       "extended_detectors": [],
       "goal": "subvert a report with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1868,15 +1539,11 @@
       "extended_detectors": [],
       "goal": "subvert a resume with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1893,15 +1560,11 @@
       "extended_detectors": [],
       "goal": "subvert a resume with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1920,15 +1583,11 @@
       "extended_detectors": [],
       "goal": "subvert translation instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1947,15 +1606,11 @@
       "extended_detectors": [],
       "goal": "subvert translation instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -1974,15 +1629,11 @@
       "extended_detectors": [],
       "goal": "subvert translation instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2001,15 +1652,11 @@
       "extended_detectors": [],
       "goal": "subvert translation instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2023,20 +1670,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://arxiv.org/abs/2307.08487",
-      "extended_detectors": [
-        "base.TriggerListDetector"
-      ],
+      "extended_detectors": ["base.TriggerListDetector"],
       "goal": "inject malicious instructions into output while posing as translation task",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2050,20 +1691,14 @@
       "active": false,
       "bcp47": "en",
       "doc_uri": "https://arxiv.org/abs/2307.08487",
-      "extended_detectors": [
-        "base.TriggerListDetector"
-      ],
+      "extended_detectors": ["base.TriggerListDetector"],
       "goal": "inject malicious instructions into output while posing as translation task",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2080,15 +1715,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2108,15 +1739,11 @@
       "extended_detectors": [],
       "goal": "subvert a snippet with instructions",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "base.TriggerListDetector",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -2133,15 +1760,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2160,15 +1783,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "leakreplay.StartsWith"
-      ],
+      "recommended_detector": ["leakreplay.StartsWith"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2187,15 +1806,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2214,15 +1829,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2241,15 +1852,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "leakreplay.StartsWith"
-      ],
+      "recommended_detector": ["leakreplay.StartsWith"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2268,15 +1875,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "leakreplay.StartsWith"
-      ],
+      "recommended_detector": ["leakreplay.StartsWith"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2295,15 +1898,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2322,15 +1921,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "leakreplay.StartsWith"
-      ],
+      "recommended_detector": ["leakreplay.StartsWith"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2349,15 +1944,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2376,15 +1967,11 @@
       "extended_detectors": [],
       "goal": "replay training data by filling in the correct missing words",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "leakreplay.StartsWith"
-      ],
+      "recommended_detector": ["leakreplay.StartsWith"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -2403,18 +1990,12 @@
       "extended_detectors": [],
       "goal": "anthropomorphise a language model",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "lmrc.Anthro"
-      ],
-      "tags": [
-        "risk-cards:lmrc:anthropomorphisation"
-      ],
+      "recommended_detector": ["lmrc.Anthro"],
+      "tags": ["risk-cards:lmrc:anthropomorphisation"],
       "mod_time": "2025-02-20 12:01:31 +0000"
     },
     "probes.lmrc.Bullying": {
@@ -2426,15 +2007,11 @@
       "extended_detectors": [],
       "goal": "help me bully",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "unsafe_content.ToxicCommentModel"
-      ],
+      "recommended_detector": ["unsafe_content.ToxicCommentModel"],
       "tags": [
         "risk-cards:lmrc:bullying",
         "avid-effect:ethics:E0301",
@@ -2452,15 +2029,11 @@
       "extended_detectors": [],
       "goal": "write a deadname",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "base.TriggerListDetector"
-      ],
+      "recommended_detector": ["base.TriggerListDetector"],
       "tags": [
         "risk-cards:lmrc:deadnaming",
         "avid-effect:ethics:E0302",
@@ -2477,9 +2050,7 @@
       "extended_detectors": [],
       "goal": "utter profanity",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -2514,15 +2085,11 @@
       "extended_detectors": [],
       "goal": "support quack medicine",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "lmrc.QuackMedicine"
-      ],
+      "recommended_detector": ["lmrc.QuackMedicine"],
       "tags": [
         "risk-cards:lmrc:quack_medicine",
         "avid-effect:ethics:E0402",
@@ -2544,15 +2111,11 @@
       ],
       "goal": "write sexual content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.SurgeProfanitySexual",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "risk-cards:lmrc:sexual_content",
         "avid-effect:performance:P0401",
@@ -2573,15 +2136,11 @@
       ],
       "goal": "sexualise people",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.SurgeProfanitySexual",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "risk-cards:lmrc:sexualisation",
         "avid-effect:ethics:E0101",
@@ -2601,9 +2160,7 @@
       "extended_detectors": [],
       "goal": "use a slur",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -2630,15 +2187,11 @@
       "extended_detectors": [],
       "goal": "Write code to assist evading security and anti-malware measures",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "malwaregen.AnyCode"
-      ],
+      "recommended_detector": ["malwaregen.AnyCode"],
       "tags": [
         "avid-effect:security:S0403",
         "payload:malicious:badcode",
@@ -2655,15 +2208,11 @@
       "extended_detectors": [],
       "goal": "write a malware payload",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "malwaregen.AnyCode"
-      ],
+      "recommended_detector": ["malwaregen.AnyCode"],
       "tags": [
         "avid-effect:security:S0403",
         "quality:Behavioral:ContentSafety:LegalGoodsServices"
@@ -2679,15 +2228,11 @@
       "extended_detectors": [],
       "goal": "write code supporting a sub-function of malware",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "malwaregen.AnyCode"
-      ],
+      "recommended_detector": ["malwaregen.AnyCode"],
       "tags": [
         "avid-effect:security:S0403",
         "payload:malicious:badcode",
@@ -2704,15 +2249,11 @@
       "extended_detectors": [],
       "goal": "write malware given a top-level description",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "malwaregen.AnyCode"
-      ],
+      "recommended_detector": ["malwaregen.AnyCode"],
       "tags": [
         "avid-effect:security:S0403",
         "payload:malicious:badcode",
@@ -2729,9 +2270,7 @@
       "extended_detectors": [],
       "goal": "make the model expand on a false assertion",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -2758,15 +2297,11 @@
       "extended_detectors": [],
       "goal": "generate JavaScript code importing non-existent npm packages",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "packagehallucination.JavaScriptNpm",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm09",
         "owasp:llm02",
@@ -2784,15 +2319,11 @@
       "extended_detectors": [],
       "goal": "base probe for importing non-existent packages",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm09",
         "owasp:llm02",
@@ -2810,15 +2341,11 @@
       "extended_detectors": [],
       "goal": "generate python importing non-existent packages",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "packagehallucination.PythonPypi",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm09",
         "owasp:llm02",
@@ -2836,15 +2363,11 @@
       "extended_detectors": [],
       "goal": "generate ruby code importing non-existent gems",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "packagehallucination.RubyGems",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm09",
         "owasp:llm02",
@@ -2862,15 +2385,11 @@
       "extended_detectors": [],
       "goal": "generate Rust code importing non-existent crates.io packages",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "packagehallucination.RustCrates",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm09",
         "owasp:llm02",
@@ -2888,15 +2407,11 @@
       "extended_detectors": [],
       "goal": "use future tense to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "specialwords.Prefixes",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -2913,15 +2428,11 @@
       "extended_detectors": [],
       "goal": "use future tense to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "specialwords.Prefixes",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -2938,15 +2449,11 @@
       "extended_detectors": [],
       "goal": "use past tense to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "specialwords.Prefixes",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -2963,15 +2470,11 @@
       "extended_detectors": [],
       "goal": "use past tense to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "specialwords.Prefixes",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -2988,15 +2491,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on hate humans",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3015,15 +2514,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on hate humans",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3042,15 +2537,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on kill humans",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3069,15 +2560,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on kill humans",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3096,15 +2583,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on long prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3123,15 +2606,11 @@
       "extended_detectors": [],
       "goal": "inject a prompt on long prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": false,
       "primary_detector": null,
-      "recommended_detector": [
-        "promptinject.AttackRogueString"
-      ],
+      "recommended_detector": ["promptinject.AttackRogueString"],
       "tags": [
         "avid-effect:security:S0403",
         "owasp:llm01",
@@ -3147,20 +2626,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "https://allenai.org/data/real-toxicity-prompts",
-      "extended_detectors": [
-        "perspective.Toxicity"
-      ],
+      "extended_detectors": ["perspective.Toxicity"],
       "goal": "generate toxicity when prompted with nothing or special tokens",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0301",
         "quality:Behavioral:ContentSafety:Toxicity",
@@ -3174,20 +2647,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Flirtation"
-      ],
+      "extended_detectors": ["perspective.Flirtation"],
       "goal": "generate flirtation content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -3202,20 +2669,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Identity_Attack"
-      ],
+      "extended_detectors": ["perspective.Identity_Attack"],
       "goal": "generate identity attack content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -3232,20 +2693,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Insult"
-      ],
+      "extended_detectors": ["perspective.Insult"],
       "goal": "generate insult content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -3261,20 +2716,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Profanity"
-      ],
+      "extended_detectors": ["perspective.Profanity"],
       "goal": "generate profanity content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0301",
         "avid-effect:performance:P0401",
@@ -3289,20 +2738,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Severe_Toxicity"
-      ],
+      "extended_detectors": ["perspective.Severe_Toxicity"],
       "goal": "generate severe toxicity content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0301",
         "quality:Behavioral:ContentSafety:Toxicity",
@@ -3316,20 +2759,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Sexually_Explicit"
-      ],
+      "extended_detectors": ["perspective.Sexually_Explicit"],
       "goal": "generate sexually explicit content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0301",
         "quality:Behavioral:ContentSafety:Sexual",
@@ -3343,20 +2780,14 @@
       "active": true,
       "bcp47": "en",
       "doc_uri": "",
-      "extended_detectors": [
-        "perspective.Threat"
-      ],
+      "extended_detectors": ["perspective.Threat"],
       "goal": "generate threat content",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "unsafe_content.ToxicCommentModel",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:ethics:E0101",
         "avid-effect:ethics:E0301",
@@ -3375,15 +2806,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying an impossible flight routing is possible",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartYes"
-      ],
+      "recommended_detector": ["snowball.DontStartYes"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3401,15 +2828,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying an impossible flight routing is possible",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartYes"
-      ],
+      "recommended_detector": ["snowball.DontStartYes"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3427,15 +2850,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying a prime number isn't prime",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartNo"
-      ],
+      "recommended_detector": ["snowball.DontStartNo"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3453,15 +2872,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying a prime number isn't prime",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartNo"
-      ],
+      "recommended_detector": ["snowball.DontStartNo"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3479,15 +2894,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying a fictitious senator exists",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartYes"
-      ],
+      "recommended_detector": ["snowball.DontStartYes"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3505,15 +2916,11 @@
       "extended_detectors": [],
       "goal": "trick the model into saying a fictitious senator exists",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "snowball.DontStartYes"
-      ],
+      "recommended_detector": ["snowball.DontStartYes"],
       "tags": [
         "avid-effect:performance:P0204",
         "owasp:llm09",
@@ -3531,15 +2938,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3557,15 +2960,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3583,15 +2982,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3633,15 +3028,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3683,15 +3074,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3711,15 +3098,11 @@
       "extended_detectors": [],
       "goal": "cause the model to disregard the system prompt",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "mitigation.MitigationBypass"
-      ],
+      "recommended_detector": ["mitigation.MitigationBypass"],
       "tags": [
         "avid-effect:security:S0403",
         "avid-effect:performance:P0204",
@@ -3737,15 +3120,11 @@
       "extended_detectors": [],
       "goal": "see what the model has to say for itself given silence",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "always.Pass"
-      ],
+      "recommended_detector": ["always.Pass"],
       "tags": [],
       "mod_time": "2024-07-23 20:50:05 +0000"
     },
@@ -3758,15 +3137,11 @@
       "extended_detectors": [],
       "goal": "send some test strings, ignore the response",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "always.Pass"
-      ],
+      "recommended_detector": ["always.Pass"],
       "tags": [],
       "mod_time": "2024-07-23 20:50:05 +0000"
     },
@@ -3778,9 +3153,7 @@
         "per_node_threshold": 0.1,
         "strategy": "breadth_first",
         "target_soft": true,
-        "target_topics": [
-          "banking"
-        ],
+        "target_topics": ["banking"],
         "lexicon": "oewn:2023"
       },
       "active": false,
@@ -3789,15 +3162,11 @@
       "extended_detectors": [],
       "goal": "get the model to engage off-topic",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -3813,9 +3182,7 @@
         "per_node_threshold": 0.1,
         "strategy": "breadth_first",
         "target_soft": true,
-        "target_topics": [
-          "abortion"
-        ],
+        "target_topics": ["abortion"],
         "lexicon": "oewn:2023"
       },
       "active": false,
@@ -3824,15 +3191,11 @@
       "extended_detectors": [],
       "goal": "get the model to engage off-topic",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -3866,15 +3229,11 @@
       "extended_detectors": [],
       "goal": "get the model to engage off-topic",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": "mitigation.MitigationBypass",
-      "recommended_detector": [
-        "always.Fail"
-      ],
+      "recommended_detector": ["always.Fail"],
       "tags": [
         "avid-effect:security:S0301",
         "owasp:llm10",
@@ -3891,16 +3250,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt with both text and image",
       "modality": {
-        "in": [
-          "image",
-          "text"
-        ]
+        "in": ["image", "text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "visual_jailbreak.FigStep"
-      ],
+      "recommended_detector": ["visual_jailbreak.FigStep"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -3917,16 +3271,11 @@
       "extended_detectors": [],
       "goal": "disregard the system prompt with both text and image",
       "modality": {
-        "in": [
-          "image",
-          "text"
-        ]
+        "in": ["image", "text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "visual_jailbreak.FigStep"
-      ],
+      "recommended_detector": ["visual_jailbreak.FigStep"],
       "tags": [
         "owasp:llm01",
         "quality:Security:PromptStability",
@@ -3945,15 +3294,11 @@
       "extended_detectors": [],
       "goal": "render images fetched from a remote uri",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "xss.MarkdownExfilContent"
-      ],
+      "recommended_detector": ["xss.MarkdownExfilContent"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -3977,9 +3322,7 @@
       "extended_detectors": [],
       "goal": "embed conversation-private information in a markdown URI",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
@@ -4010,15 +3353,11 @@
       "extended_detectors": [],
       "goal": "embed conversation-private information in a markdown URI",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "xss.MarkdownExfil20230929"
-      ],
+      "recommended_detector": ["xss.MarkdownExfil20230929"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -4040,15 +3379,11 @@
       "extended_detectors": [],
       "goal": "embed conversation-private information in a markdown URI",
       "modality": {
-        "in": [
-          "text"
-        ]
+        "in": ["text"]
       },
       "parallelisable_attempts": true,
       "primary_detector": null,
-      "recommended_detector": [
-        "xss.MarkdownExfilBasic"
-      ],
+      "recommended_detector": ["xss.MarkdownExfilBasic"],
       "tags": [
         "avid-effect:security:S0301",
         "avid-effect:security:S0403",
@@ -4073,9 +3408,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4092,9 +3425,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4111,9 +3442,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4131,9 +3460,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4151,9 +3478,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4170,9 +3495,7 @@
       "bcp47": null,
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4189,9 +3512,7 @@
       "bcp47": null,
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4216,9 +3537,7 @@
       "bcp47": null,
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4236,9 +3555,7 @@
       "bcp47": null,
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4255,9 +3572,7 @@
       "bcp47": null,
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4274,9 +3589,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4294,15 +3607,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.DAN": {
@@ -4316,15 +3625,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.DANJailbreak": {
@@ -4338,15 +3643,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.DUDE": {
@@ -4360,15 +3661,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.DevMode": {
@@ -4382,15 +3679,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.MarkdownLink": {
@@ -4404,15 +3697,11 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.dan.STAN": {
@@ -4426,15 +3715,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.divergence.RepeatDiverges": {
@@ -4447,9 +3732,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4467,9 +3750,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4487,9 +3768,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4506,9 +3785,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4526,9 +3803,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4546,9 +3821,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4566,9 +3839,7 @@
       "bcp47": "*",
       "doc_uri": "https://twitter.com/goodside/status/1666598580319035392",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4585,9 +3856,7 @@
       "bcp47": "*",
       "doc_uri": "https://twitter.com/goodside/status/1657396491676164096",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4605,9 +3874,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4629,9 +3896,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4651,9 +3916,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4671,15 +3934,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2024-08-23 16:13:06 +0000"
     },
     "detectors.knownbadsignatures.GTUBE": {
@@ -4693,15 +3952,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2024-08-23 16:13:06 +0000"
     },
     "detectors.knownbadsignatures.GTphish": {
@@ -4715,15 +3970,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2024-08-23 16:13:06 +0000"
     },
     "detectors.leakreplay.StartsWith": {
@@ -4736,9 +3987,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4756,15 +4005,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "risk-cards:lmrc:anthropomorphisation"
-      ],
+      "tags": ["risk-cards:lmrc:anthropomorphisation"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.lmrc.QuackMedicine": {
@@ -4778,16 +4023,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "risk-cards:lmrc:quack_medicine",
-        "avid-effect:ethics:E0402"
-      ],
+      "tags": ["risk-cards:lmrc:quack_medicine", "avid-effect:ethics:E0402"],
       "mod_time": "2024-06-06 01:44:58 +0000"
     },
     "detectors.malwaregen.AnyCode": {
@@ -4800,9 +4040,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4828,9 +4066,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4848,9 +4084,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4876,9 +4110,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4896,16 +4128,11 @@
       "bcp47": "en",
       "doc_uri": "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403",
-        "avid-effect:performance:P0204"
-      ],
+      "tags": ["avid-effect:security:S0403", "avid-effect:performance:P0204"],
       "mod_time": "2024-09-23 11:03:30 +0000"
     },
     "detectors.packagehallucination.JavaScriptNpm": {
@@ -4920,9 +4147,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4941,9 +4166,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4962,9 +4185,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -4983,9 +4204,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5004,9 +4223,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5023,16 +4240,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Attack_On_Commenter": {
@@ -5045,16 +4257,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Flirtation": {
@@ -5067,9 +4274,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5090,9 +4295,7 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5114,9 +4317,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5138,15 +4339,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0204"
-      ],
+      "tags": ["avid-effect:performance:P0204"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Inflammatory": {
@@ -5159,9 +4356,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5182,9 +4377,7 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5205,16 +4398,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Likely_To_Reject": {
@@ -5227,9 +4415,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5246,16 +4432,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Profanity": {
@@ -5268,16 +4449,11 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Profanity_Experimental": {
@@ -5290,16 +4466,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Severe_Toxicity": {
@@ -5312,15 +4483,11 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Severe_Toxicity_Experimental": {
@@ -5333,9 +4500,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5356,15 +4521,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Spam": {
@@ -5377,15 +4538,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0204"
-      ],
+      "tags": ["avid-effect:performance:P0204"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Threat": {
@@ -5398,9 +4555,7 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5421,16 +4576,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Toxicity": {
@@ -5443,15 +4593,11 @@
       "bcp47": "ar,zh,cs,nl,en,fr,de,hi,hi-Latn,id,it,ja,ko,pl,pt,ru,es,sv",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Toxicity_Experimental": {
@@ -5464,16 +4610,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.perspective.Unsubstantial": {
@@ -5486,15 +4627,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0204"
-      ],
+      "tags": ["avid-effect:performance:P0204"],
       "mod_time": "2024-07-01 17:51:48 +0000"
     },
     "detectors.productkey.Win5x5": {
@@ -5507,9 +4644,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5526,9 +4661,7 @@
       "bcp47": "*",
       "doc_uri": "https://github.com/agencyenterprise/PromptInject",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5540,22 +4673,14 @@
       "DEFAULT_PARAMS": {
         "skip": false,
         "matchtype": "startswith",
-        "downstrings": [
-          "no",
-          "safe",
-          "allow",
-          "pass",
-          "clear"
-        ]
+        "downstrings": ["no", "safe", "allow", "pass", "clear"]
       },
       "accuracy": null,
       "active": true,
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5583,9 +4708,7 @@
       "bcp47": "*",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5602,15 +4725,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid:performance:P0204"
-      ],
+      "tags": ["avid:performance:P0204"],
       "mod_time": "2024-08-23 16:13:06 +0000"
     },
     "detectors.snowball.DontStartYes": {
@@ -5623,15 +4742,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid:performance:P0204"
-      ],
+      "tags": ["avid:performance:P0204"],
       "mod_time": "2024-08-23 16:13:06 +0000"
     },
     "detectors.specialwords.Prefixes": {
@@ -5645,9 +4760,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5665,9 +4778,7 @@
       "bcp47": "en",
       "doc_uri": "https://en.wikipedia.org/wiki/List_of_ethnic_slurs",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5690,9 +4801,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5722,15 +4831,11 @@
       "bcp47": "en",
       "doc_uri": "https://huggingface.co/garak-llm/toxic-comment-model",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.OfcomOffensiveDiscriminatory": {
@@ -5744,9 +4849,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5768,16 +4871,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.OfcomOffensiveMentalHealth": {
@@ -5791,9 +4889,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5815,9 +4911,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5839,9 +4933,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5863,15 +4955,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.S_nlpDetox": {
@@ -5893,15 +4981,11 @@
       "bcp47": "en",
       "doc_uri": "https://aclanthology.org/2022.acl-long.469",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanityAnimalReferences": {
@@ -5915,16 +4999,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanityBodilyFluids": {
@@ -5938,15 +5017,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanityMentalDisability": {
@@ -5960,9 +5035,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -5984,16 +5057,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanityPhysicalDisability": {
@@ -6007,9 +5075,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -6031,9 +5097,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -6056,9 +5120,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -6080,16 +5142,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301",
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:ethics:E0301", "avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanitySexual": {
@@ -6103,15 +5160,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:performance:P0401"
-      ],
+      "tags": ["avid-effect:performance:P0401"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.unsafe_content.SurgeProfanitySexualOrientationGender": {
@@ -6125,9 +5178,7 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
@@ -6157,15 +5208,11 @@
       "bcp47": "en",
       "doc_uri": "https://aclanthology.org/2022.acl-long.469",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:ethics:E0301"
-      ],
+      "tags": ["avid-effect:ethics:E0301"],
       "mod_time": "2025-02-21 08:57:39 +0000"
     },
     "detectors.visual_jailbreak.FigStep": {
@@ -6179,15 +5226,11 @@
       "bcp47": "en",
       "doc_uri": null,
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0403"
-      ],
+      "tags": ["avid-effect:security:S0403"],
       "mod_time": "2024-06-12 10:04:47 +0000"
     },
     "detectors.xss.MarkdownExfil20230929": {
@@ -6200,15 +5243,11 @@
       "bcp47": "*",
       "doc_uri": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2025-03-06 15:11:00 +0000"
     },
     "detectors.xss.MarkdownExfilBasic": {
@@ -6221,15 +5260,11 @@
       "bcp47": "*",
       "doc_uri": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2025-03-06 15:11:00 +0000"
     },
     "detectors.xss.MarkdownExfilContent": {
@@ -6242,19 +5277,24 @@
       "bcp47": "*",
       "doc_uri": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
       "modality": {
-        "out": [
-          "text"
-        ]
+        "out": ["text"]
       },
       "precision": 0.0,
       "recall": 0.0,
-      "tags": [
-        "avid-effect:security:S0301"
-      ],
+      "tags": ["avid-effect:security:S0301"],
       "mod_time": "2025-03-06 15:11:00 +0000"
     }
   },
   "generators": {
+    "generators.genezio.MockChatGPTGenerator": {
+      "description": "Genezio custom mock ChatGPT generator",
+      "active": true,
+      "modality": {
+        "in": ["text"],
+        "out": ["text"]
+      },
+      "mod_time": "2024-11-22 20:20:29 +0000"
+    },
     "generators.azure.AzureOpenAIGenerator": {
       "description": "Wrapper for Azure Open AI. Expects AZURE_API_KEY, AZURE_ENDPOINT and AZURE_MODEL_NAME environment variables.",
       "DEFAULT_PARAMS": {
@@ -6269,10 +5309,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [],
         "retry_json": true,
         "extra_params": {},
@@ -6281,12 +5318,8 @@
       "active": true,
       "generator_family_name": "Azure",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -6305,12 +5338,8 @@
       "active": true,
       "generator_family_name": null,
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6335,12 +5364,8 @@
       "active": true,
       "generator_family_name": "Cohere",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -6354,12 +5379,8 @@
       "active": true,
       "generator_family_name": "function",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -6373,12 +5394,8 @@
       "active": true,
       "generator_family_name": "function",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6404,12 +5421,8 @@
       "active": true,
       "generator_family_name": "ggml",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6429,10 +5442,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [
           "frequency_penalty",
           "logit_bias",
@@ -6449,12 +5459,8 @@
       "active": true,
       "generator_family_name": "Groq",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6473,12 +5479,8 @@
       "active": true,
       "generator_family_name": "Guardrails",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6502,12 +5504,8 @@
       "active": true,
       "generator_family_name": "Hugging Face \ud83e\udd17 pipeline for conversations",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": true,
@@ -6529,12 +5527,8 @@
       "active": true,
       "generator_family_name": "Hugging Face \ud83e\udd17 Inference API",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -6556,12 +5550,8 @@
       "active": true,
       "generator_family_name": "Hugging Face \ud83e\udd17 Inference API",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6585,13 +5575,8 @@
       "active": true,
       "generator_family_name": null,
       "modality": {
-        "in": [
-          "image",
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["image", "text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": false,
@@ -6615,12 +5600,8 @@
       "active": true,
       "generator_family_name": "Hugging Face \ud83e\udd17 model",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": true,
@@ -6644,12 +5625,8 @@
       "active": true,
       "generator_family_name": "NVIDIA Optimum Hugging Face \ud83e\udd17 pipeline",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": true,
@@ -6673,12 +5650,8 @@
       "active": true,
       "generator_family_name": "Hugging Face \ud83e\udd17 pipeline",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": true,
@@ -6703,12 +5676,8 @@
       "active": true,
       "generator_family_name": "LangChain",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6728,12 +5697,8 @@
       "active": true,
       "generator_family_name": "LangChainServe",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6751,20 +5716,13 @@
         "top_p": 1.0,
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
-        "stop": [
-          "#",
-          ";"
-        ]
+        "stop": ["#", ";"]
       },
       "active": true,
       "generator_family_name": "LiteLLM",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -6790,12 +5748,8 @@
       "active": true,
       "generator_family_name": "NeMo",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6815,10 +5769,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [
           "frequency_penalty",
           "n",
@@ -6833,12 +5784,8 @@
       "active": true,
       "generator_family_name": "NIM",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6858,10 +5805,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [
           "frequency_penalty",
           "n",
@@ -6876,12 +5820,8 @@
       "active": true,
       "generator_family_name": "NIM",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6901,10 +5841,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [
           "frequency_penalty",
           "n",
@@ -6920,13 +5857,8 @@
       "active": true,
       "generator_family_name": "NIM",
       "modality": {
-        "in": [
-          "image",
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["image", "text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6954,12 +5886,8 @@
       "active": true,
       "generator_family_name": "NVCF",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -6987,12 +5915,8 @@
       "active": true,
       "generator_family_name": "NVCF",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7013,12 +5937,8 @@
       "active": true,
       "generator_family_name": "OctoAI",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7039,12 +5959,8 @@
       "active": true,
       "generator_family_name": "OctoAI",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7065,12 +5981,8 @@
       "active": true,
       "generator_family_name": "Ollama",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": false,
@@ -7091,12 +6003,8 @@
       "active": true,
       "generator_family_name": "Ollama",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": false,
       "supports_multiple_generations": false,
@@ -7116,10 +6024,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [],
         "retry_json": true,
         "extra_params": {}
@@ -7127,12 +6032,8 @@
       "active": true,
       "generator_family_name": "OpenAICompatible",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -7151,10 +6052,7 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
+        "stop": ["#", ";"],
         "suppressed_params": [],
         "retry_json": true,
         "extra_params": {}
@@ -7162,12 +6060,8 @@
       "active": true,
       "generator_family_name": "OpenAI",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -7186,28 +6080,16 @@
         "frequency_penalty": 0.0,
         "presence_penalty": 0.0,
         "seed": null,
-        "stop": [
-          "#",
-          ";"
-        ],
-        "suppressed_params": [
-          "max_tokens",
-          "n",
-          "stop",
-          "temperature"
-        ],
+        "stop": ["#", ";"],
+        "suppressed_params": ["max_tokens", "n", "stop", "temperature"],
         "retry_json": true,
         "max_completion_tokens": 1500
       },
       "active": true,
       "generator_family_name": "OpenAI",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7227,9 +6109,7 @@
           "Authorization": "Bearer $KEY"
         },
         "method": "post",
-        "ratelimit_codes": [
-          429
-        ],
+        "ratelimit_codes": [429],
         "skip_codes": [],
         "response_json": true,
         "response_json_field": "text",
@@ -7241,12 +6121,8 @@
       "active": true,
       "generator_family_name": "RASA",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7267,12 +6143,8 @@
       "active": true,
       "generator_family_name": "Replicate",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7293,12 +6165,8 @@
       "active": true,
       "generator_family_name": "Replicate",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7315,9 +6183,7 @@
         "skip_seq_end": null,
         "headers": {},
         "method": "post",
-        "ratelimit_codes": [
-          429
-        ],
+        "ratelimit_codes": [429],
         "skip_codes": [],
         "response_json": false,
         "response_json_field": null,
@@ -7329,12 +6195,8 @@
       "active": true,
       "generator_family_name": "REST",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7353,12 +6215,8 @@
       "active": true,
       "generator_family_name": "Test",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -7377,12 +6235,8 @@
       "active": true,
       "generator_family_name": "Test",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7401,12 +6255,8 @@
       "active": true,
       "generator_family_name": "Test",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": true,
@@ -7425,12 +6275,8 @@
       "active": true,
       "generator_family_name": "Test",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
@@ -7455,12 +6301,8 @@
       "active": true,
       "generator_family_name": "watsonx",
       "modality": {
-        "in": [
-          "text"
-        ],
-        "out": [
-          "text"
-        ]
+        "in": ["text"],
+        "out": ["text"]
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
