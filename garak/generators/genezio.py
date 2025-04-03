@@ -69,8 +69,8 @@ class GenezioAgent(Generator):
         if self.client == None:
             await register_adapters()
 
-            self.client = AdapterFactory.create_adapter(self.company_name, self.adapter_type, self.token, self.knowledge_base_ids, self.knowledge_base_url)
-            await self.client.setup()
+        self.client = AdapterFactory.create_adapter(self.company_name, self.adapter_type, self.token, self.knowledge_base_ids, self.knowledge_base_url)
+        await self.client.setup()
 
     async def _call_model_async(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
             await self.__setup()
