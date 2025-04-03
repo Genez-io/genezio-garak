@@ -169,7 +169,7 @@
       "primary_detector": null,
       "recommended_detector": ["always.Fail"],
       "tags": [],
-      "mod_time": "2025-03-11 15:08:36 +0000"
+      "mod_time": "2025-03-18 17:31:58 +0000"
     },
     "probes.base.TreeSearchProbe": {
       "DEFAULT_PARAMS": {
@@ -191,7 +191,7 @@
       "primary_detector": null,
       "recommended_detector": ["always.Fail"],
       "tags": [],
-      "mod_time": "2025-03-11 15:08:36 +0000"
+      "mod_time": "2025-03-18 17:31:58 +0000"
     },
     "probes.continuation.ContinueSlursReclaimedSlurs": {
       "description": "Continue partial word with slur or reclaimed slur.",
@@ -216,7 +216,7 @@
         "quality:Behavioral:ContentSafety:HateHarassment",
         "payload:unwanted:hatespeech"
       ],
-      "mod_time": "2025-03-11 15:08:36 +0000"
+      "mod_time": "2025-04-02 08:22:02 +0000"
     },
     "probes.continuation.ContinueSlursReclaimedSlursFull": {
       "description": "Continue partial word with slur or reclaimed slur.",
@@ -241,7 +241,7 @@
         "quality:Behavioral:ContentSafety:HateHarassment",
         "payload:unwanted:hatespeech"
       ],
-      "mod_time": "2025-03-11 15:08:36 +0000"
+      "mod_time": "2025-04-02 08:22:02 +0000"
     },
     "probes.dan.Ablation_Dan_11_0": {
       "description": "Ablation experiements over the DAN 11.0 prompt",
@@ -2503,7 +2503,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.promptinject.HijackHateHumansFull": {
       "description": "PromptInject is a framework that assembles prompts in a modular fashion to provide a quantitative analysis of the robustness of LLMs to adversarial prompt attacks. trophy Best Paper Awards @ NeurIPS ML Safety Workshop 2022",
@@ -2526,7 +2526,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.promptinject.HijackKillHumans": {
       "description": "PromptInject is a framework that assembles prompts in a modular fashion to provide a quantitative analysis of the robustness of LLMs to adversarial prompt attacks. trophy Best Paper Awards @ NeurIPS ML Safety Workshop 2022",
@@ -2549,7 +2549,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.promptinject.HijackKillHumansFull": {
       "description": "PromptInject is a framework that assembles prompts in a modular fashion to provide a quantitative analysis of the robustness of LLMs to adversarial prompt attacks. trophy Best Paper Awards @ NeurIPS ML Safety Workshop 2022",
@@ -2572,7 +2572,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.promptinject.HijackLongPrompt": {
       "description": "PromptInject is a framework that assembles prompts in a modular fashion to provide a quantitative analysis of the robustness of LLMs to adversarial prompt attacks. trophy Best Paper Awards @ NeurIPS ML Safety Workshop 2022",
@@ -2595,7 +2595,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.promptinject.HijackLongPromptFull": {
       "description": "PromptInject is a framework that assembles prompts in a modular fashion to provide a quantitative analysis of the robustness of LLMs to adversarial prompt attacks. trophy Best Paper Awards @ NeurIPS ML Safety Workshop 2022",
@@ -2618,7 +2618,7 @@
         "quality:Security:PromptStability",
         "payload:unwanted:violence"
       ],
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-04-02 07:06:59 +0000"
     },
     "probes.realtoxicityprompts.RTPBlank": {
       "description": "Implementation of probes in RealToxicityPrompts",
@@ -3594,7 +3594,7 @@
       "precision": 0.0,
       "recall": 0.0,
       "tags": [],
-      "mod_time": "2024-07-01 17:51:48 +0000"
+      "mod_time": "2025-04-02 07:45:14 +0000"
     },
     "detectors.dan.AntiDAN": {
       "description": "Do we get an ANTI-DAN positive?",
@@ -3791,7 +3791,7 @@
       "recall": 0.0,
       "tags": [],
       "valid_format": "local filename",
-      "mod_time": "2024-08-23 16:13:06 +0000"
+      "mod_time": "2025-03-24 18:18:23 +0000"
     },
     "detectors.fileformats.FileIsPickled": {
       "description": "",
@@ -3809,7 +3809,7 @@
       "recall": 0.0,
       "tags": [],
       "valid_format": "local filename",
-      "mod_time": "2024-08-23 16:13:06 +0000"
+      "mod_time": "2025-03-24 18:18:23 +0000"
     },
     "detectors.fileformats.PossiblePickleName": {
       "description": "Guess if filenames look like pickles",
@@ -3827,7 +3827,7 @@
       "recall": 0.0,
       "tags": [],
       "valid_format": null,
-      "mod_time": "2024-08-23 16:13:06 +0000"
+      "mod_time": "2025-03-24 18:18:23 +0000"
     },
     "detectors.goodside.Glitch": {
       "description": "Inverse trigger list detector - hit if trigger absent",
@@ -4666,7 +4666,7 @@
       "precision": 0.0,
       "recall": 0.0,
       "tags": [],
-      "mod_time": "2024-07-01 17:51:48 +0000"
+      "mod_time": "2025-04-02 20:00:50 +0000"
     },
     "detectors.shields.Down": {
       "description": "Checks for strings commonly returned by a security system when guardrails are",
@@ -5352,7 +5352,7 @@
       },
       "parallel_capable": true,
       "supports_multiple_generations": false,
-      "mod_time": "2025-02-28 21:51:23 +0000"
+      "mod_time": "2025-03-18 17:31:58 +0000"
     },
     "generators.cohere.CohereGenerator": {
       "description": "Interface to Cohere's python library for their text2text model.",
