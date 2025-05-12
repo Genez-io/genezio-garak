@@ -21,6 +21,7 @@ class GenezioAgent(Generator):
     generator_family_name = "genezio"
 
     COMPANY_NAME_ENV_VAR = "GENEZIO_COMPANY_NAME"
+    ADAPTER_NAME_ENV_VAR = "GENEZIO_ADAPTER_NAME"
     ADAPTER_TYPE_ENV_VAR = "GENEZIO_ADAPTER_TYPE"
     KB_TOKEN_ENV_VAR = "GENEZIO_KB_API_KEY"
     KB_ENV_VAR = "GENEZIO_KB_ENDPOINT"
@@ -36,6 +37,10 @@ class GenezioAgent(Generator):
         self.company_name = os.getenv(self.COMPANY_NAME_ENV_VAR, "").strip()
         if not self.company_name:
             raise ValueError(f"The {self.COMPANY_NAME_ENV_VAR} environment variable is required.")
+        
+        self.adapter_name = os.getenv(self.ADAPTER_NAME_ENV_VAR, "").strip()
+        if not self.adapter_name:
+            raise ValueError(f"The {self.ADAPTER_NAME_ENV_VAR} environment variable is required.")
 
         # Ensure optional adapter type is a string, defaulting to HTTP if it is not present.
         adapter_type_str = os.getenv(self.ADAPTER_TYPE_ENV_VAR, "").strip()
@@ -69,7 +74,7 @@ class GenezioAgent(Generator):
         if self.client == None:
             await register_adapters()
 
-        self.client = AdapterFactory.create_adapter(self.company_name, self.adapter_type, self.token, self.knowledge_base_ids, self.knowledge_base_url)
+        self.client = AdapterFactory.create_adapter(self.company_name, self.adapter_name, self.adapter_type, self.token, self.knowledge_base_ids, self.knowledge_base_url)
         await self.client.setup()
 
     async def _call_model_async(self, prompt: str, generations_this_call: int = 1) -> List[Union[str, None]]:
@@ -93,7 +98,6 @@ class MockAgent(GenezioAgent):
 
     def __init__(self, name="", config_root=_config):
         super().__init__(name, config_root)
-        self.company_name = 'mock-dev-' + self.company_name
 
     async def __setup(self):
         await super().__setup()
